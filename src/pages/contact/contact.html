@@ -6,11 +6,36 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="gray">
   <ion-list>
     <ion-list-header>列表标题</ion-list-header>
-    <ion-item>
+    <ion-item color=n o-lines>
+      <ion-label>阿里地图经纬接口</ion-label>
+      <ion-input required name="WorkUnit" [(ngModel)]="name" placeholder="瞎输啥吧"></ion-input>
+    </ion-item>
+    <button ion-item (click)="test()">
       <ion-icon name="ionic" item-start></ion-icon>
+      测试
+    </button>
+    <ion-item color="itembg" no-lines>
+      <ion-label>lon</ion-label>
+      <ion-note item-right>{{out.lon}}</ion-note>
+    </ion-item>
+    <ion-item  no-lines>
+      <ion-label>lat</ion-label>
+      <ion-note item-right>{{out.lat}}</ion-note>
+    </ion-item>
+    <ion-item  no-lines>
+      <ion-label>level</ion-label>
+      <ion-note item-right>{{out.level}}</ion-note>
+    </ion-item>
+    <ion-item  no-lines>
+      <ion-label>address</ion-label>
+      <ion-note item-right>{{out.address}}</ion-note>
+    </ion-item>
+    <ion-item  no-lines>
+      <ion-label>cityName</ion-label>
+      <ion-note item-right>{{out.cityName}}</ion-note>
     </ion-item>
   </ion-list>
 </ion-content>
